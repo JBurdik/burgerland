@@ -39,3 +39,18 @@
     }
   }
 }
+
+.card-wrapper {
+  margin: auto;
+  width: 70%;
+  .card {
+    height: 200px;
+    overflow: hidden;
+    margin: 0 1rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
