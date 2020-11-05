@@ -1,0 +1,41 @@
+.hero {
+  background: url("/images/butterland.jpg");
+  background-color: hsl(38, 0%, 20%);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  .center {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    .secondary-text {
+      color: hsl(38, 50%, 50%);
+    }
+    .order {
+      text-transform: uppercase;
+      font-weight: 500;
+      border-width: 2px;
+      transition: 300ms;
+      // background:hsl(38, 50%, 50%);
+      // color: #000;
+      svg{
+        margin: 0 .7rem 0 0 !important;
+        transition: 700ms;
+      }
+      &:hover {
+        color: hsl(38, 50%, 50%);
+        border-color: hsl(38, 50%, 50%);
+        svg{
+          transform: rotateZ(360deg);
+        }
+      }
+    }
+  }
+}
