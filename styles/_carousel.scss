@@ -1,0 +1,21 @@
+
+// carousel 
+.rec-arrow {
+  background-color: transparent;
+  border: none !important;
+}
+.rec-arrow:hover {
+  background-color: transparent !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+.rec-arrow:disabled {
+  visibility: hidden;
+}
+.carousel-card {
+img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+}

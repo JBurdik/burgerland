@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export default styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 100%;
-  background-color: #683bb7;
-  color: #fff;
-  margin: 15px;
-  font-size: 4em;
+height: 300px;
+width: 100%;
+margin: 0 1rem;
+display: flex;
+flex-flow: column;
+align-items: center;
+justify-content: center;
 `;
