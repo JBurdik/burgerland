@@ -39,14 +39,14 @@ class Header extends React.Component {
               </a>
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="social nav-item">
             <Link href="#">
               <a className="nav-link">
                 <FontAwesomeIcon className="socials" icon={faFacebook} />
               </a>
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="social nav-item">
             <Link href="#">
               <a className="nav-link">
                 <FontAwesomeIcon className="socials" icon={faInstagram} />

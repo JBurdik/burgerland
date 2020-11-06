@@ -44,3 +44,29 @@
     }
   }
 }
+@media screen and (max-width: 680px) {
+  .navbar{
+    bottom: 0;
+    justify-content: center;
+    .logo {
+      display: none;
+    }
+    .navbar-nav {
+      margin: 0;
+      width: 100%;
+      justify-content: space-around;
+      .nav-item {
+        width: 120px;
+        .nav-link {
+          flex-flow: column;
+          .nav-icon {
+            margin: 0;
+          }
+        }
+      }
+      .social {
+        display: none;
+      }
+    }
+  }
+}
