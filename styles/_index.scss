@@ -1,54 +1,82 @@
 .hero {
   background: url("/images/butterland.jpg");
+  background-position: 50% 50%;
   background-color: hsl(38, 0%, 20%);
   background-blend-mode: soft-light;
   background-size: cover;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
+  position: relative;
   .center {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
     .secondary-text {
       color: hsl(38, 50%, 50%);
     }
+    h1 {
+      margin-top: 10rem;
+    }
     .order {
+      margin: auto 0 4rem 0;
       text-transform: uppercase;
       font-weight: 500;
       border-width: 2px;
       transition: 300ms;
       // background:hsl(38, 50%, 50%);
       // color: #000;
-      svg{
-        margin: 0 .7rem 0 0 !important;
+      svg {
+        margin: 0 0.7rem 0 0 !important;
         transition: 700ms;
       }
       &:hover {
         color: hsl(38, 50%, 50%);
         border-color: hsl(38, 50%, 50%);
-        svg{
+        svg {
           transform: rotateZ(360deg);
         }
       }
     }
   }
 }
+
+section {
+  text-align: center;
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 section:not(.hero):not(#footer) {
   max-width: 1200px;
   margin: auto;
   padding: 50px 0;
+  h1 {
+    color: hsl(38, 50%, 30%);
+  }
+}
+
+#about {
+  p {
+    max-width: 750px;
+    text-align: justify;
+    margin: auto;
+    padding: 0 1.5rem;
+  }
 }
 
 #footer {
+  padding-top: 1rem;
   background: hsl(38, 50%, 10%);
   color: white;
-  .grid{ 
+  .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -63,7 +91,7 @@ section:not(.hero):not(#footer) {
     .schedule {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      row-gap: .5rem;
+      row-gap: 0.5rem;
     }
   }
 }

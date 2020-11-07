@@ -16,7 +16,7 @@ class Header extends React.Component {
         </li>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link href="/">
+            <Link href="#">
               <a className="nav-link">
                 <FontAwesomeIcon className="nav-icon" icon={faHomeAlt} />
                 <span className="link-text">Domů</span>
@@ -24,7 +24,7 @@ class Header extends React.Component {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/portfolio">
+            <Link href="#burgers">
               <a className="nav-link">
                 <FontAwesomeIcon className="nav-icon" icon={faHamburger} />
                 <span className="link-text">Burgery</span>
@@ -32,7 +32,7 @@ class Header extends React.Component {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/about">
+            <Link href="#footer">
               <a className="nav-link">
                 <FontAwesomeIcon className="nav-icon" icon={faCommentsAlt} />
                 <span className="link-text">Kontakt</span>
