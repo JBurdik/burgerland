@@ -1,8 +1,6 @@
 .hero {
   background: url("/images/butterland.jpg");
   background-position: 50% 50%;
-  background-color: hsl(38, 0%, 20%);
-  background-blend-mode: soft-light;
   background-size: cover;
   margin-top: $menu-height;
   height: calc(100vh - 100px);
@@ -21,7 +19,7 @@
   &:after {
     content: "";
     background: #000;
-    opacity: .85;
+    opacity: .75;
     position: absolute;
     top: 0;
     right: 0;

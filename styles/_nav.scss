@@ -37,6 +37,7 @@
         flex-flow: row;
         align-items: center;
         justify-content: center;
+        transition: 500ms ease;
         .nav-icon {
           margin: 0 0.5rem 0 0;
           height: 1.5rem;
@@ -45,6 +46,9 @@
         .socials {
           height: 1.2rem;
           width: 1.2rem;
+        }
+        &:hover {
+          color: $primary
         }
       }
       .active {

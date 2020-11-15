@@ -51,10 +51,10 @@ const Index = () => {
           </p>
         </div>
       </section>
-      <section id="photos">
+      {/* <section id="photos">
         <h1>Naše Burgery</h1>
         <BurgerMenu />
-      </section>
+      </section> */}
       <section id="burgers">
         <h1>Burgery</h1>
         <div className="burgers-wrapper">
