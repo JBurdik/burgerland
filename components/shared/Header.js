@@ -1,5 +1,7 @@
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -12,11 +14,11 @@ class Header extends React.Component {
     return (
       <div className="navbar">
         <li className="logo">
-          <img src="/images/logo.png" alt="BurgerLand.cz" />
+          <img src="/images/logo-white-outline-sezam.svg" alt="BurgerLand.cz" />
         </li>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link href="#">
+            <Link to="hero" activeClass="active" smooth={true} offset={-100}>
               <a className="nav-link">
                 <FontAwesomeIcon className="nav-icon" icon={faHomeAlt} />
                 <span className="link-text">Domů</span>
@@ -24,7 +26,13 @@ class Header extends React.Component {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="#burgers">
+            <Link
+              to="burgers"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+            >
               <a className="nav-link">
                 <FontAwesomeIcon className="nav-icon" icon={faHamburger} />
                 <span className="link-text">Burgery</span>
@@ -32,7 +40,13 @@ class Header extends React.Component {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="#footer">
+            <Link
+              to="footer"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+            >
               <a className="nav-link">
                 <FontAwesomeIcon className="nav-icon" icon={faCommentsAlt} />
                 <span className="link-text">Kontakt</span>

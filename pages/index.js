@@ -17,7 +17,8 @@ import BurgerCard from "../components/layouts/BurgerCard";
 const Index = () => {
   return (
     <BaseLayout>
-      <section className="hero">
+      <section className="hero" id="hero">
+        <video className="herovid" src="/hero.mp4" loop autoPlay muted="true"></video>
         <div className="center">
           <h1>
             Vítejte v <span className="secondary-text">BURGERLANDU</span>
@@ -35,15 +36,20 @@ const Index = () => {
       </section>
       <section id="about">
         <h1>O nás</h1>
-        <p>
-          Naším cílem je stát se nejlepší „burgrárnou“ v okolí, kam se lidé vždy
-          rádi vrátí. Jak toho chceme dosáhnout? Klademe důraz jak na kvalitu
-          domácích surovin, příjemné prostředí, tak i na obsluhu a dobré pití.
-          Chceme našim zákazníkům poskytnout gurmánský zážitek při každé
-          návštěvě naší restaurace. S nadšením a poctivým přístupem Vám tyto
-          zážitky dokážeme poskytnout, přijeďte a posuďte sami. Těšíme se na
-          Vaši návštěvu.
-        </p>
+        <div className="wrapper">
+          <div className="about-image">
+            <img src="/images/about.jpg" alt="Burgerland.cz"/>
+          </div>
+          <p>
+            Naším cílem je stát se nejlepší „burgrárnou“ v okolí, kam se lidé
+            vždy rádi vrátí. Jak toho chceme dosáhnout? Klademe důraz jak na
+            kvalitu domácích surovin, příjemné prostředí, tak i na obsluhu a
+            dobré pití. Chceme našim zákazníkům poskytnout gurmánský zážitek při
+            každé návštěvě naší restaurace. S nadšením a poctivým přístupem Vám
+            tyto zážitky dokážeme poskytnout, přijeďte a posuďte sami. Těšíme se
+            na Vaši návštěvu.
+          </p>
+        </div>
       </section>
       <section id="photos">
         <h1>Naše Burgery</h1>
@@ -93,19 +99,19 @@ const Index = () => {
         <h1>Kontaktujte nás</h1>
         <div className="grid">
           <div className="center address">
-            <FontAwesomeIcon icon={faMapMarked}></FontAwesomeIcon>
+            <FontAwesomeIcon size="3x" icon={faMapMarked}></FontAwesomeIcon>
             <h5>Vladislavova 28, Vysoké Mýto, 566 01</h5>
           </div>
           <div className="center phone">
-            <FontAwesomeIcon icon={faMobile}></FontAwesomeIcon>
+            <FontAwesomeIcon size="3x" icon={faMobile}></FontAwesomeIcon>
             <h5>+420 735 019 936</h5>
           </div>
           <div className="center mail">
-            <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+            <FontAwesomeIcon size="3x" icon={faEnvelope}></FontAwesomeIcon>
             <h5>burgerland@demo.com</h5>
           </div>
           <div className="center work-hours">
-            <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
+            <FontAwesomeIcon size="3x" icon={faClock}></FontAwesomeIcon>
             <div className="schedule">
               <span>Pondelí</span>
               <span>Zavřeno</span>
@@ -125,7 +131,7 @@ const Index = () => {
           </div>
           <div className="center map"></div>
           <div className="center delivery">
-            <FontAwesomeIcon icon={faTruck}></FontAwesomeIcon>
+            <FontAwesomeIcon size="3x" icon={faTruck}></FontAwesomeIcon>
           </div>
         </div>
       </section>
