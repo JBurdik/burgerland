@@ -133,5 +133,11 @@ section:not(.hero):not(#footer) {
   .herovid {
     display: none;
   }
+  #about {
+    .wrapper {
+      display: flex;
+      flex-flow: column;
+    }
+  }
 
 }
