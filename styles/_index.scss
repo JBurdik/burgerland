@@ -19,7 +19,7 @@
   &:after {
     content: "";
     background: #000;
-    opacity: .75;
+    opacity: .55;
     position: absolute;
     top: 0;
     right: 0;
@@ -33,6 +33,7 @@
     bottom: 0;
     right: 0;
     left: 0;
+    padding: 0.4rem;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -124,12 +125,22 @@ section:not(.hero):not(#footer) {
     }
     .schedule {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
       row-gap: 0.5rem;
+      column-gap: 3rem;
+      span:nth-of-type(even) {
+        text-align: right;
+      }
+      span:nth-of-type(odd) {
+        text-align: left;
+      }
     }
   }
 }
 @media screen and (max-width: 680px) {
+  .hero {
+    margin-top: unset;
+  }
   .herovid {
     display: none;
   }
@@ -137,6 +148,26 @@ section:not(.hero):not(#footer) {
     .wrapper {
       display: flex;
       flex-flow: column;
+    }
+  }
+  #footer {
+    .grid {
+      padding: 0 1.7rem;
+      display: flex;
+      flex-flow: column;
+      align-items: start;
+      justify-content: center;
+      .center {
+        flex-flow: row;
+        text-align: unset;
+        align-items: center;
+        justify-content: center;
+        svg{
+          max-height: 1.5rem;
+          width: 1.5rem;
+          margin: 0 .6rem;
+        }
+      }
     }
   }
 
