@@ -62,7 +62,7 @@ const Index = () => {
             burger="Cheeseburger"
             price="139,-"
             image="cheeseburger.jpg"
-            ingredients="Vyzrálé Hovězí maso, slanina, extra cheddar, karamelizovaná cibulka, domací dresink, čerstvá zelenina"
+            // ingredients="Vyzrálé Hovězí maso, slanina, extra cheddar, karamelizovaná cibulka, domací dresink, čerstvá zelenina"
             alergens={["1", "3", "7", "10", "11"]}
           />
           <BurgerCard
