@@ -5,13 +5,6 @@ const BurgerCard = (props) => {
   if(props.ingredients) {
     const ingredients = props.ingredients.split(", ");
   }
-  const arr = (ingredients) => {
-    ingredients.map((ingredient, idx) => {
-        return (
-          <li key={idx}>{ingredient}</li>
-        )
-        }
-  }
   return (
     <div className="burger-card" style={{backgroundImage: `url(/images/${image})`}}>
       <h1>{burger} <span>{price}</span></h1>
