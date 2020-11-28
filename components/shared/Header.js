@@ -3,21 +3,19 @@ import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faInfo } from "@fortawesome/pro-light-svg-icons";
-import { faHamburger } from "@fortawesome/pro-light-svg-icons";
-import { faCommentsAlt } from "@fortawesome/pro-light-svg-icons";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInfo,
+  faHamburger,
+  faCommentsAlt,
+} from "@fortawesome/pro-light-svg-icons";
 
 class Header extends React.Component {
   render() {
     return (
       <div className="navbar">
         <li className="logo">
-          <Link 
-            to="hero" 
-            smooth={true}
-            offset={-100}>
+          <Link to="hero" smooth={true} offset={-100}>
             <img
               src="/images/logo-white-outline-sezam.svg"
               alt="BurgerLand.cz"

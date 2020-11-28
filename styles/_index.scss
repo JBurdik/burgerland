@@ -19,7 +19,7 @@
   &:after {
     content: "";
     background: #000;
-    opacity: .55;
+    opacity: 0.55;
     position: absolute;
     top: 0;
     right: 0;
@@ -121,7 +121,11 @@ section:not(.hero):not(#footer) {
       display: flex;
       flex-flow: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+      margin: 0.2rem 0;
+      &:last-child {
+        margin-bottom: auto;
+      }
     }
     .schedule {
       display: grid;
@@ -133,6 +137,24 @@ section:not(.hero):not(#footer) {
       }
       span:nth-of-type(odd) {
         text-align: left;
+      }
+    }
+    .delivery-zones {
+      display: flex;
+      flex-flow: column;
+      text-align: left;
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin-right: 0.3rem;
+          &:nth-of-type(even) {
+            color: hsl(38, 50%, 70%);
+          }
+        }
       }
     }
   }
@@ -162,13 +184,16 @@ section:not(.hero):not(#footer) {
         text-align: unset;
         align-items: center;
         justify-content: center;
-        svg{
+
+        .align-start {
+          align-self: flex-start;
+        }
+        svg {
           max-height: 1.5rem;
           width: 1.5rem;
-          margin: 0 .6rem;
+          margin: 0 0.6rem;
         }
       }
     }
   }
-
 }

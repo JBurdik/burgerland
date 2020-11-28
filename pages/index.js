@@ -9,7 +9,6 @@ import {
   faTruck,
   faMap,
 } from "@fortawesome/pro-light-svg-icons";
-import BurgerMenu from "./carousel";
 import BurgerCard from "../components/layouts/BurgerCard";
 
 // slick carousel
@@ -51,10 +50,6 @@ const Index = () => {
           </p>
         </div>
       </section>
-      {/* <section id="photos">
-        <h1>Naše Burgery</h1>
-        <BurgerMenu />
-      </section> */}
       <section id="burgers">
         <h1>Burgery</h1>
         <div className="burgers-wrapper">
@@ -62,7 +57,7 @@ const Index = () => {
             burger="Cheeseburger"
             price="139,-"
             image="cheeseburger.jpg"
-            // ingredients="Vyzrálé Hovězí maso, slanina, extra cheddar, karamelizovaná cibulka, domací dresink, čerstvá zelenina"
+            ingredients="Vyzrálé Hovězí maso, slanina, extra cheddar, karamelizovaná cibulka, domací dresink, čerstvá zelenina"
             alergens={["1", "3", "7", "10", "11"]}
           />
           <BurgerCard
@@ -111,7 +106,7 @@ const Index = () => {
             <h5>burgerland@demo.com</h5>
           </div>
           <div className="center work-hours">
-            <FontAwesomeIcon size="3x" icon={faClock}></FontAwesomeIcon>
+            <FontAwesomeIcon className="align-start" size="3x" icon={faClock}></FontAwesomeIcon>
             <div className="schedule">
               <span>Pondelí</span>
               <span>Zavřeno</span>
@@ -131,7 +126,59 @@ const Index = () => {
           </div>
           <div className="center map"></div>
           <div className="center delivery">
-            <FontAwesomeIcon size="3x" icon={faTruck}></FontAwesomeIcon>
+            <FontAwesomeIcon className="align-start" size="3x" icon={faTruck}></FontAwesomeIcon>
+            <div className="delivery-zones">
+              <span className="zone">
+                <h3>Pásmo 1</h3>
+                <ul>
+                  <li>Vysoké Mýto - město</li>
+                </ul>
+              </span>
+              <span className="zone">
+                <h3>Pásmo 2</h3>
+                <ul>
+                  <li>Vanice, </li>
+                  <li>Knířov, </li>
+                  <li>Na Vinicích, </li>
+                  <li>Sárovec, </li>
+                  <li>Jangelec, </li>
+                  <li>Slanina, </li>
+                  <li>Šnakov</li>
+                </ul>
+              </span>
+              <span className="zone">
+                <h3>Pásmo 3</h3>
+                <ul>
+                  <li>Hrušová, </li>
+                  <li>Zámrsk, </li>
+                  <li>Vraclav, </li>
+                  <li>Sedlec, </li>
+                  <li>Domoradice, </li>
+                  <li>Svařeň, </li>
+                  <li>Brteč, </li>
+                  <li>Lhůta, </li>
+                  <li>Džbánov, </li>
+                  <li>Tisová, </li>
+                  <li>Zaháj, </li>
+                  <li>Dvořisko </li>
+                </ul>
+              </span>
+              <span className="zone">
+                <h3>Pásmo 4</h3>
+                <ul>
+                  <li>Choceň, </li>
+                  <li>Sruby, </li>
+                  <li>Dobříkov, </li>
+                  <li>Janovičky, </li>
+                  <li>Zádolí, </li>
+                  <li>Střihanov, </li>
+                  <li>Cerekvice nad Loučnou, </li>
+                  <li>Záliší,</li>
+                  <li>Vračovice,</li>
+                  <li>Nořín</li>
+                </ul>
+              </span>
+            </div>
           </div>
         </div>
       </section>
