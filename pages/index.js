@@ -17,7 +17,13 @@ const Index = () => {
   return (
     <BaseLayout>
       <section className="hero" id="hero">
-        <video className="herovid" src="/hero.mp4" loop autoPlay muted="true"></video>
+        <video
+          className="herovid"
+          src="/hero.mp4"
+          loop
+          autoPlay
+          muted="true"
+        ></video>
         <div className="center">
           <h1>
             Vítejte v <span className="secondary-text">BURGERLANDU</span>
@@ -37,7 +43,7 @@ const Index = () => {
         <h1>O nás</h1>
         <div className="wrapper">
           <div className="about-image">
-            <img src="/images/about.jpg" alt="Burgerland.cz"/>
+            <img src="/images/about.jpg" alt="Burgerland.cz" />
           </div>
           <p>
             Naším cílem je stát se nejlepší „burgrárnou“ v okolí, kam se lidé
@@ -52,6 +58,10 @@ const Index = () => {
       </section>
       <section id="burgers">
         <h1>Burgery</h1>
+        <h4>
+          Burger (150g) | XXL Burger (300g) 199,- | Menu (Burger + Hranolky)
+          155,- | XXL Menu 209,- | Obal 10,-
+        </h4>
         <div className="burgers-wrapper">
           <BurgerCard
             burger="Cheeseburger"
@@ -105,8 +115,15 @@ const Index = () => {
             <FontAwesomeIcon size="3x" icon={faEnvelope}></FontAwesomeIcon>
             <h5>burgerland@demo.com</h5>
           </div>
+        </div>
+
+        <div className="grid">
           <div className="center work-hours">
-            <FontAwesomeIcon className="align-start" size="3x" icon={faClock}></FontAwesomeIcon>
+            <FontAwesomeIcon
+              className="align-start"
+              size="3x"
+              icon={faClock}
+            ></FontAwesomeIcon>
             <div className="schedule">
               <span>Pondelí</span>
               <span>Zavřeno</span>
@@ -124,9 +141,20 @@ const Index = () => {
               <span>11:00 - 20:00</span>
             </div>
           </div>
-          <div className="center map"></div>
+          <div className="center map">
+            <FontAwesomeIcon 
+              className="align-start"
+              size="3x"
+              icon={faMap}
+            ></FontAwesomeIcon>
+            <img src="/images/map.png"></img>
+          </div>
           <div className="center delivery">
-            <FontAwesomeIcon className="align-start" size="3x" icon={faTruck}></FontAwesomeIcon>
+            <FontAwesomeIcon
+              className="align-start"
+              size="3x"
+              icon={faTruck}
+            ></FontAwesomeIcon>
             <div className="delivery-zones">
               <span className="zone">
                 <h3>Pásmo 1</h3>

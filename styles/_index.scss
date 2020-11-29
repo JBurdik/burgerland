@@ -114,17 +114,23 @@ section:not(.hero):not(#footer) {
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
     justify-content: center;
+    column-gap: 2rem;
+    margin: 2rem;
     .center {
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: flex-start;
       margin: 0.2rem 0;
+      height: 100%;
       &:last-child {
         margin-bottom: auto;
+      }
+      svg {
+        margin-bottom: 1rem;
       }
     }
     .schedule {
@@ -132,11 +138,18 @@ section:not(.hero):not(#footer) {
       grid-template-columns: 1fr 1fr;
       row-gap: 0.5rem;
       column-gap: 3rem;
+      width: 100%;
       span:nth-of-type(even) {
         text-align: right;
       }
       span:nth-of-type(odd) {
         text-align: left;
+      }
+    }
+    .map {
+      img {
+        width: 100%;
+        object-fit: contain;
       }
     }
     .delivery-zones {
@@ -157,6 +170,17 @@ section:not(.hero):not(#footer) {
         }
       }
     }
+    &:nth-of-type(1) {
+      .center {
+        border: 0.2rem solid #000;
+        padding: 2rem;
+        border-radius: 20px;
+        justify-content: center;
+        h5 {
+          margin: 1rem 0 0 0;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 680px) {
@@ -174,12 +198,12 @@ section:not(.hero):not(#footer) {
   }
   #footer {
     .grid {
-      padding: 0 1.7rem;
       display: flex;
       flex-flow: column;
       align-items: start;
-      justify-content: center;
+      justify-content: space-between;
       .center {
+        width: 100%;
         flex-flow: row;
         text-align: unset;
         align-items: center;
@@ -192,6 +216,36 @@ section:not(.hero):not(#footer) {
           max-height: 1.5rem;
           width: 1.5rem;
           margin: 0 0.6rem;
+        }
+      }
+      .map {
+        img {
+          width: calc(100% - 2.7rem);
+        }
+      }
+      .delivery-zones {
+        h3{
+          margin: 0;
+        }
+        .zone {
+          margin:0 0 1rem 0;
+        }
+      }
+
+      &:nth-of-type(1) {
+        .center {
+          width: 100%;
+          text-align: left;
+          justify-content: flex-start;
+          align-items: center;
+          h5 {
+            margin: 0;
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        .center {
+          margin: 1rem 0;
         }
       }
     }
