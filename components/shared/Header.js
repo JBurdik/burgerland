@@ -30,11 +30,10 @@ class Header extends React.Component {
               smooth={true}
               spy={true}
               offset={-100}
+              className="nav-link"
             >
-              <a className="nav-link">
-                <FontAwesomeIcon className="nav-icon" icon={faInfo} />
-                <span className="link-text">O nás</span>
-              </a>
+              <FontAwesomeIcon className="nav-icon" icon={faInfo} />
+              <span className="link-text">O nás</span>
             </Link>
           </li>
           <li className="nav-item">
@@ -44,11 +43,10 @@ class Header extends React.Component {
               spy={true}
               smooth={true}
               offset={-100}
+              className="nav-link"
             >
-              <a className="nav-link">
-                <FontAwesomeIcon className="nav-icon" icon={faHamburger} />
-                <span className="link-text">Burgery</span>
-              </a>
+              <FontAwesomeIcon className="nav-icon" icon={faHamburger} />
+              <span className="link-text">Burgery</span>
             </Link>
           </li>
           <li className="nav-item">
@@ -58,25 +56,20 @@ class Header extends React.Component {
               spy={true}
               smooth={true}
               offset={-100}
+              className="nav-link"
             >
-              <a className="nav-link">
-                <FontAwesomeIcon className="nav-icon" icon={faCommentsAlt} />
-                <span className="link-text">Kontakt</span>
-              </a>
+              <FontAwesomeIcon className="nav-icon" icon={faCommentsAlt} />
+              <span className="link-text">Kontakt</span>
             </Link>
           </li>
           <li className="social nav-item">
-            <Link href="#">
-              <a className="nav-link">
-                <FontAwesomeIcon className="socials" icon={faFacebook} />
-              </a>
+            <Link href="#" className="nav-link">
+              <FontAwesomeIcon className="socials" icon={faFacebook} />
             </Link>
           </li>
           <li className="social nav-item">
-            <Link href="#">
-              <a className="nav-link">
+            <Link href="#" className="nav-link">
                 <FontAwesomeIcon className="socials" icon={faInstagram} />
-              </a>
             </Link>
           </li>
         </ul>

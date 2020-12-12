@@ -10,6 +10,7 @@ import {
   faMap,
 } from "@fortawesome/pro-light-svg-icons";
 import BurgerCard from "../components/layouts/BurgerCard";
+import Link from "next/link";
 
 // slick carousel
 
@@ -22,7 +23,7 @@ const Index = () => {
           src="/hero.mp4"
           loop
           autoPlay
-          muted="true"
+          muted={true}
         ></video>
         <div className="center">
           <h1>
@@ -33,10 +34,12 @@ const Index = () => {
             Happy hours 15:00 - 17:00
             <span className="secondary-text"> Kofola k burgeru ZDARMA</span>
           </h2>
-          <a href="tel:605589517" className="order btn">
-            <FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>
-            Objednej si burger
-          </a>
+          <Link href="tel:735019936">
+            <a className="order btn">
+              <FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>
+              Objednej si burger
+            </a>
+          </Link>
         </div>
       </section>
       <section id="about">
@@ -99,6 +102,117 @@ const Index = () => {
             alergens={["1", "3", "5", "7", "10", "11"]}
           />
         </div>
+        <section className="jine">
+          <h1>Ostatní</h1>
+          <div className="card">
+            <div className="header">
+              <h3>Salát</h3>
+              <price>55,-</price>
+            </div>
+            <span className="ingredients">
+              Salátový mix, kuřecí prsa, krutony, domácí zálivka, parmezán
+            </span>
+            <br />
+            <span className="alergens">1,3,5,6,7,8,10,11</span>
+          </div>
+          <div className="card">
+            <div className="header">
+              <h3>Hranolky</h3>
+              <price>55,-</price>
+            </div>
+          </div>
+          <div className="card">
+            <div className="header">
+              <h3>Batátové hranolky</h3>
+              <price>55,-</price>
+            </div>
+          </div>
+          <h3>Suroviny navíc</h3>
+          <h5 className="primary">(10,-)</h5>
+          <div className="additions">
+            <div className="card">
+              <div className="header">
+                <h3>Slanina</h3>
+              </div>
+            </div>
+            <div className="card">
+              <div className="header">
+                <h3>Chedar</h3>
+              </div>
+            </div>
+            <div className="card">
+              <div className="header">
+                <h3>Karamelizovaná cibulka</h3>
+              </div>
+            </div>
+            <div className="card">
+              <div className="header">
+                <h3>Jalapeňos</h3>
+              </div>
+            </div>
+            <div className="card">
+              <div className="header">
+                <h3>Tatarka</h3>
+              </div>
+            </div>
+            <div className="card">
+              <div className="header">
+                <h3>Kečup</h3>
+              </div>
+            </div>
+            <div className="card">
+              <div className="header">
+                <h3>Domací česnekový dresink</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="drinks">
+          <h1>Nápoje</h1>
+          <div className="card">
+            <div className="header">
+              <h3>Kofola plech 0,25l</h3>
+              <price>25,-</price>
+            </div>
+          </div>
+          <div className="card">
+            <div className="header">
+              <h3>Coca-Cola ZERO plech 0,25l</h3>
+              <price>29,-</price>
+            </div>
+          </div>
+          <h3>Káva a čaj</h3>
+          <div className="card">
+            <div className="header">
+              <h3>Ristretto</h3>
+              <price>39,-</price>
+            </div>
+          </div>
+          <div className="card">
+            <div className="header">
+              <h3>Lungo</h3>
+              <price>39,-</price>
+            </div>
+          </div>
+          <div className="card">
+            <div className="header">
+              <h3>Caffé latte</h3>
+              <price>55,-</price>
+            </div>
+          </div>
+          <div className="card">
+            <div className="header">
+              <h3>Čaj</h3>
+              <price>30,-</price>
+            </div>
+          </div>
+          <div className="card">
+            <div className="header">
+              <h3>Turecká káva</h3>
+              <price>30,-</price>
+            </div>
+          </div>
+        </section>
       </section>
       <section id="footer">
         <h1>Kontaktujte nás</h1>
@@ -142,7 +256,7 @@ const Index = () => {
             </div>
           </div>
           <div className="center map">
-            <FontAwesomeIcon 
+            <FontAwesomeIcon
               className="align-start"
               size="3x"
               icon={faMap}
