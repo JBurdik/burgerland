@@ -96,7 +96,6 @@ section:not(.hero):not(#footer) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    align-items: start;
     .about-image {
       img {
         width: 100%;
@@ -245,7 +244,7 @@ section:not(.hero):not(#footer) {
     .grid {
       display: flex;
       flex-flow: column;
-      align-items: start;
+      align-items: flex-start;
       justify-content: space-between;
       .center {
         width: 100%;

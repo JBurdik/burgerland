@@ -63,14 +63,14 @@ class Header extends React.Component {
             </Link>
           </li>
           <li className="social nav-item">
-            <Link href="#" className="nav-link">
+            <a target={"_blank"} href="https://www.facebook.com/Burgerlandcz-107008804386883" className="nav-link">
               <FontAwesomeIcon className="socials" icon={faFacebook} />
-            </Link>
+            </a>
           </li>
           <li className="social nav-item">
-            <Link href="#" className="nav-link">
+            <a target={"_blank"} href="https://www.instagram.com/burgerland.cz/?hl=cs" className="nav-link">
                 <FontAwesomeIcon className="socials" icon={faInstagram} />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
