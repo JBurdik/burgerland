@@ -107,7 +107,7 @@ const Index = () => {
           <div className="card">
             <div className="header">
               <h3>Salát</h3>
-              <price>55,-</price>
+              <price>129,-</price>
             </div>
             <span className="ingredients">
               Salátový mix, kuřecí prsa, krutony, domácí zálivka, parmezán
@@ -118,7 +118,7 @@ const Index = () => {
           <div className="card">
             <div className="header">
               <h3>Hranolky</h3>
-              <price>55,-</price>
+              <price>39,-</price>
             </div>
           </div>
           <div className="card">
